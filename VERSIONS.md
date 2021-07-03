@@ -4,5 +4,5 @@
 Basics functions
 
 ### v1.1.0
-1. Edit the Text..., Changed logs, fonts, new colors, size
+1. Edit the Text..., fonts, new colors, size
 2. worker be more beautiful !
