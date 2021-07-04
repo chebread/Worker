@@ -14,7 +14,7 @@ def PageUse():
 def PageLicens():
     msg.showinfo("라이센스", "MIT License\n\nⓒ 2021 차한음 😎")
 def PageVersion():
-    msg.showinfo("버전", "현재 버전 v2.0.0 🤟")
+    msg.showinfo("버전", "현재 버전 v2.1.0 ✋")
 def MenuHelp():
     global root
     menu = Menu(root)
