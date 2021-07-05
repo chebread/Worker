@@ -4,11 +4,10 @@ from tkinter import messagebox as msg
 from clint.textui import *
 import tkinter.font as tf
 
-# main settings
 root = Tk() # use to tkinter
 root.title("Worker")
 root.geometry("240x220") # 가로x세로
-#Help
+
 def PageUse():
     msg.showinfo("사용방법", "띄워진 창 안에서\n노트를 작성하세요 ✍️")
 def PageLicens():
@@ -24,7 +23,7 @@ def MenuHelp():
     help.add_command(label="버전", command=PageVersion)
     menu.add_cascade(label="도움말", menu=help)
     root.config(menu=menu)
-# main Function
+
 def Input():
     global root
     text = Text(root, selectforeground="white",borderwidth=5,\
@@ -35,6 +34,6 @@ def Input():
 def Play():
     Input()
     MenuHelp()
-# codes
+
 Play()
 root.mainloop()
