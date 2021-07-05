@@ -14,8 +14,7 @@ def PageLicens():
     msg.showinfo("라이센스", "MIT License\n\nⓒ 2021 차한음 😎")
 def PageVersion():
     msg.showinfo("버전", "현재 버전 v2.1.1 ✋")
-def MenuHelp():
-    global root
+def Menus():
     menu = Menu(root)
     help = Menu(menu, tearoff=0)
     help.add_command(label="사용방법", command=PageUse)
@@ -23,17 +22,15 @@ def MenuHelp():
     help.add_command(label="버전", command=PageVersion)
     menu.add_cascade(label="도움말", menu=help)
     root.config(menu=menu)
-
 def Input():
-    global root
-    text = Text(root, selectforeground="white",borderwidth=5,\
+    t = Text(root, selectforeground="white",borderwidth=5,\
     tabs=24, font=17, fg="black", bg="light sky blue",\
     highlightbackground="medium purple", highlightthickness=0)
-    text.pack(fill="both", expand=True)
-    text.configure(font=tf.Font(family="Apple SD 산돌고딕 Ne", weight="bold"))
+    t.pack(fill="both", expand=True)
+    t.configure(font=tf.Font(family="Apple SD 산돌고딕 Ne", weight="bold"))
 def Play():
     Input()
-    MenuHelp()
-
+    Menus()
+    
 Play()
 root.mainloop()
